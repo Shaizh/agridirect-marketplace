@@ -1,0 +1,6 @@
+{
+  "name": "AgriDirect Marketplace PWA",
+  "description": "Farmer-to-Consumer direct progressive web app with real-time stock management, order tracking, farmer & admin dashboards, and farm-fresh marketplace.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@layer base {
+  :root {
+    --bento-bg: #F7F7F2;
+    --bento-card-bg: #FFFFFF;
+    --bento-green: #3A5A40;
+    --bento-green-dark: #2F4834;
+    --bento-green-light: #588157;
+    --bento-sage: #A3B18A;
+    --bento-sage-light: #DAD7CD;
+    --bento-border: #E6E8E2;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F7F7F2;
+    color: #1E293B;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Bento Grid custom utility classes */
+.bento-card {
+  background-color: #FFFFFF;
+  border-radius: 1.75rem;
+  border: 1px solid #E6E8E2;
+  box-shadow: 0 4px 20px -2px rgba(58, 90, 64, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  border-color: #D3D8CB;
+  box-shadow: 0 12px 30px -4px rgba(58, 90, 64, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+}
+
+.bento-card-dark {
+  background-color: #2F4834;
+  color: #FFFFFF;
+  border-radius: 1.75rem;
+  border: 1px solid #3A5A40;
+  box-shadow: 0 10px 30px -5px rgba(47, 72, 52, 0.3);
+}
+
+.bento-card-sage {
+  background-color: #EBF0E6;
+  border-radius: 1.75rem;
+  border: 1px solid #D5DEC9;
+}
+
+.bento-card-warm {
+  background-color: #FAF6ED;
+  border-radius: 1.75rem;
+  border: 1px solid #EBE4D5;
+}
+
+/* Custom scrollbar for horizontal product sliders & tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+
